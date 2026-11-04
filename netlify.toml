@@ -1,0 +1,9 @@
+[build]
+  command = "npx expo export -p web"
+  publish = "dist"
+
+# Expo Router web export is a single-page app; send unknown paths to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
